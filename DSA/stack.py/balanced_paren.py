@@ -36,7 +36,7 @@ def is_paren_balanced(paren_string):
                 top = s.pop()
                 if not is_match(top, paren):
                     is_balanced = False
-                    break
+                    break                                                                                                                                                                                                                                                       
         index += 1
 
     return s.is_empty() and is_balanced
