@@ -29,3 +29,4 @@ myStack.push("C")
 myStack.pop()
 print(myStack.get_stack())
 print(myStack.peek())
+
