@@ -31,15 +31,22 @@ label.pack(pady=(10, 0))  # Add some vertical padding
 
 # Entry widget with custom background, foreground color, and font
 entry = tk.Entry(root, font=entry_font, bg="lightgray", fg="black", width=50)
+entry.insert(0,"Hello")
+entry.insert(0, "ok ")
+entry.delete(0, tk.END)
 entry.pack(pady=10)  # Add some vertical padding
 
 # Text widget with custom font, background, and foreground color
 text = tk.Text(root, height=5, width=38, font=entry_font, bg="black", fg="white")
+text.insert(tk.END, "Put me at the end!")
+text.insert(tk.END, "\nPut me at the end!")
 text.pack(pady=10)  # Add some vertical padding
 
 # Button widget with custom background, foreground color, and font
 submit_button = tk.Button(root, text="Submit", command=on_submit, font=button_font, bg="green", fg="red")
 submit_button.pack(pady=10)
+
+
 
 root.mainloop()
 

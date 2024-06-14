@@ -14,7 +14,7 @@ class LinkedList:
     def append(self, data):
         new_node = Node(data)    
         if self.head is None:
-            self.head = new_node
+            self.head = new_node 
             return        
         last_node = self.head
         while last_node.next:
@@ -37,6 +37,7 @@ llist = LinkedList()
 llist.append("A")
 llist.append("B")
 llist.append("C")
+llist.prepend("E")
 
 
 llist.insert_after_node(llist.head.next, "D")
